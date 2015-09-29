@@ -1,0 +1,737 @@
+/**
+ * General elements
+ */
+* { padding: 0; margin: 0; }
+
+body 
+{
+	color: #000;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	background: #c8c8c8;
+}
+
+a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover
+{
+	border-bottom: 2px solid #990000;
+}
+
+
+.red
+{
+	color: #990000;
+}
+ 
+/**
+ * Layout of the main page elements 
+ */
+#wrapper 
+{
+	margin: 0 auto;
+	width: 980px; 
+}
+ 
+ 
+/**
+ * Layout for header
+ */
+
+#header-wrapper
+{
+	margin: 0 auto;
+	width: 980px; 
+}
+
+#header 
+{
+	width:100%;
+	height:140px;
+	color: #fff;
+	border-top: 10px solid #990000;
+	background: #a90329; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: -moz-radial-gradient(center, ellipse cover,  #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+
+}
+
+.sitetitle {
+	font-family: 'Roboto';
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+  	margin-top: 50px;
+  	left: 130px;
+  	font-size: 48px;
+}
+
+.sitetitle a {
+	color: #fff;
+}
+
+.sitetitle a:hover {
+	border-bottom: none;
+}
+
+.siteslogan 
+{
+	font-size: 14px;
+	font-style: italic;
+	color: #fff;
+}
+
+.sitelogo
+{
+	margin-left: 5px;
+	margin-top: 5px;
+	height: 100px;
+	float:left;
+}
+
+
+#header nav
+{
+	width: 680px;
+	float: left;
+	margin-left: 5px;
+	text-align: center;
+}
+
+.nav-spacer
+{
+	color: #740000;
+}
+
+#header nav a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+#header nav a:hover
+{
+	color: #FFF;
+	border-bottom: 2px solid #FFF;
+}
+
+
+/**
+ * Layout for main
+ */
+#main 
+{
+	background: rgba(255,255,255,1);
+	padding: 15px 15px 15px 15px;
+}
+
+
+#main .text
+{
+	width: 600px;
+	margin-left: 25px;
+}
+
+h1
+{
+	margin: 0 0 0 0;
+	padding-top: 10px;
+	font-size: 23px;
+}
+h2
+{
+	margin: 0 0 0 0;
+	font-size: 18px;
+	padding-top: 10px;
+}
+
+ul
+{
+	margin: 0 0 0 0;
+	margin-left: 0px;
+	padding-bottom: 10px;
+	list-style-type: none;
+	font-weight: bold;
+}
+
+li
+{
+	
+}
+
+.profil
+{
+	width:250px;
+	margin-left: 25px;
+}
+
+/**
+ * Layout for footer
+ */
+#footer 
+{
+	border-top: 1px solid #fff;
+	padding-top: 5px;
+	bottom: 0px;
+	left:0px;
+	width: 100%;
+	height:20px;
+	background: #fff;
+	text-align: center;
+	font-style: italic;
+	font-size: 12px;
+}
+ 
+.sitefooter 
+{
+	color: #990000;
+}
+.sitefooter a 
+{
+	color: #990000;
+}
+
+/**
+ * Loyout for dice
+ */
+.dice
+{
+  display: inline-block;
+  padding: 0;
+  margin-left: 25px;
+  width: 32px;
+  height: 32px;
+  background: url(http://upload.wikimedia.org/wikipedia/commons/2/2e/Dice-faces_32x32.jpg) no-repeat;
+}
+
+.dice-1 { background-position: -160px 0px; }
+.dice-2 { background-position: -128px 0px; }
+.dice-3 { background-position:  -96px 0px; }
+.dice-4 { background-position:  -64px 0px; }
+.dice-5 { background-position:  -32px 0px; }
+.dice-6 { background-position:    0px 0px; }
+
+#searchfield
+{
+	width: 235px;
+	height: 25px;
+	background: url("../img/search.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+	padding-left: 25px;
+	float:right;
+	margin-top: -12px;
+	margin-right: 5px;
+}
+
+#searchfield input[type=search]
+{
+	height: 25px;
+	font-size: 18px;
+	background: rgba(255, 255, 255, 0.8);
+	border: none;
+	border-radius: 10px;
+	padding-left: 10px;
+}
+
+#searchfield input[type=search]:focus
+{
+	outline: 0;
+}
+
+/**
+* Layout for the listings
+*/
+
+#listview
+{
+
+	display: inline-block;
+	width: 950px;
+}
+
+.list-item
+{
+	float:left;
+	width: 200px;
+	height: 400px;
+	overflow: hidden;
+	padding: 5px 18px 5px 18px;
+}
+
+.list-item:hover
+{
+	border: 2px solid #990000;
+	padding: 3px 16px 3px 16px;
+}
+
+.list-item a:hover
+{
+	border-bottom: none;
+}
+
+.list-sort
+{
+	text-align: center;
+	font-size: 18px;
+}
+
+
+.list-title
+{
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-size: 24px;
+	text-align: center;
+}
+
+.list-title a:hover
+{
+	color: #990000;
+}
+
+.list-info
+{
+	font-size: 14px;
+	text-align: center;
+	font-style: italic;
+}
+
+.list-info a 
+{
+	color: #990000;
+}
+
+.list-info a:hover
+{
+	color: #000000;
+}
+
+.pages 
+{
+	text-align: center;
+}
+
+.hits-per-page
+{
+	text-align: center;
+}
+
+.list-nomatch
+{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	text-align: center;
+	color: #990000;
+}
+
+.list-nomatch a:hover
+{
+	border-bottom: 2px solid #990000;
+}
+
+/**
+* Layout for the info-box
+*/
+
+#movie-info-wrapper
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.8);
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+#movie-info
+{
+	position: absolute;
+	z-index: 999;
+	width: 800px;
+	margin-top: 80px;
+	padding-bottom: 25px;
+	background: rgba(255, 255, 255, 1);
+	border: 2px solid #990000;
+}
+
+#close-info
+{
+	position: absolute;
+	font-weight: bold;
+	top: 5px;
+	left: 5px;
+	text-align: center;
+	z-index: 9999;
+}
+
+#close-info a 
+{
+	color: #990000;
+	
+}
+
+#info-head
+{
+	height: 200px;
+	width: 800px;
+}
+
+.info-title
+{
+	color: #000;
+	margin-top: 0;
+	font-size: 48px;
+	text-align: center;
+	text-shadow: 2px 2px #ccc;
+	font-family: "Fredericka the Great";
+}
+
+.info-info
+{
+	width: 800px;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.info-info a 
+{
+	color: #990000;
+}
+
+.info-info a:hover
+{
+	color: #000000;
+}
+
+.info-genre
+{
+	width: 800px;
+	font-size: 12px;
+	font-style: italic;
+	text-align: center;
+}
+
+.info-plot
+{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: justify;
+	width: 560px;
+	margin-left: 120px;
+}
+
+#info-imbd-link
+{
+	position: absolute;
+	left: 5px;
+	top: 145px;
+	width: 100px;
+	height: 50px;
+}
+
+/*
+* Layout for the orderby
+*/
+
+.orderby a
+{
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.orderby a:hover
+{
+	color: #990000;
+}
+
+.list-hits-per-page
+{
+	font-size: 18px;
+}
+
+.list-hits-per-page a 
+{
+	color: #990000;
+}
+
+.list-hits-per-page a:hover 
+{
+	border-bottom: 2px solid #000000;
+}
+
+.pages
+{
+	font-family: 'Orbitron';
+	font-weight: 900;
+	font-size: 18px;
+}
+
+.pages a 
+{
+	color: #990000;
+}
+
+#genre-list
+{
+	text-align: center;
+}
+
+#genre-list p 
+{
+	font-size: 16px;
+}
+
+#genre-list p a 
+{
+	color: #990000;
+}
+
+#genre-list p a:hover
+{
+	border-bottom: 2px solid #000000;
+}
+
+.genre-spacer
+{
+	color: #ccc;
+}
+
+/*
+* Layout for the news
+*/
+
+#news-list
+{
+	display: inline-block;
+}
+
+.news-list-item
+{
+	width: 250px;
+	height: 140px;
+	float: left;
+	margin: 5px 27px 5px 27px;
+	padding: 5px 5px 5px 5px;
+	min-height: 122px;
+	overflow: hidden;
+}
+
+.news-list-item:hover 
+{
+	border: 2px solid #990000;
+	margin: 3px 25px 3px 25px;
+}
+
+.news-list-item p 
+{
+	margin-left: 2px;
+}
+
+.news-item-full
+{
+	width: 600px;
+	margin-left: 190px;
+}
+
+.news-back
+{
+	margin-top: 10px;
+}
+
+.news-text
+{
+	width: 600px;
+}
+
+.news-publ
+{
+	font-style: italic;
+	font-size: 12px;
+	color: #990000;
+}
+
+/*
+* Layout for Admin god-mode
+*/
+.admin-list li
+{
+	height: 30px;
+	padding-top: 10px;
+}
+.admin-list li:nth-child(odd)
+{
+	background: #ffcdcd;
+}
+.admin-list li:nth-child(odd):hover
+{
+	background: #fff;
+}
+.admin-list li:nth-child(even)
+{
+	background: #febbbb;
+}
+.admin-list li:nth-child(even):hover
+{
+	background: #fff;
+}
+
+/*
+* Layout for the frontpage
+*/
+#start-latest-list
+{
+	position: relative;
+	display: inline-block;
+}
+
+.start-latest-top
+{
+	width: 950px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+
+.start-latest-top:hover
+{
+	width: 946px;
+	height: 196px;
+	border: 2px solid #990000;
+}
+
+#start-latest-list a:hover
+{
+	border-bottom: none;
+}
+
+.start-latest-bot
+{
+	position: relative;
+	width: 475px;
+	height: 200px;
+	float: left;
+}
+
+.start-latest-bot:hover
+{
+	width: 471px;
+	height: 196px;
+	overflow: hidden;
+	border: 2px solid #990000;
+}
+
+
+.start-latest-bot p, .start-latest-top p 
+{
+	position: absolute;
+	text-align: center;
+	width: 475px;
+	bottom: 15px;
+	font-size: 24px;
+	font-family: "Fredericka the Great";
+	text-shadow: 1px 1px #ccc;
+	color: #000;
+	background: rgba(255, 255, 255, 0.4);
+	font-weight: bold;
+}
+
+.start-latest-top p 
+{
+	width: 950px;
+	font-size: 28px;
+}
+
+#start-hot
+{
+	position: relative;
+	display: inline-block;
+}
+
+.hottest
+{
+	background: url(../img.php?src=movies/lego_the_movie.jpg&width=475&height=200&crop-to-fit);
+}
+
+.newly-rented
+{
+	background: url(../img.php?src=movies/maleficent.jpg&width=475&height=200&crop-to-fit);
+}
+
+#start-hot a:hover
+{
+	border-bottom: none;
+}
+
+.start-hot-item
+{
+	width: 475px;
+	height: 200px;
+	float: left;
+}
+.start-hot-item:hover
+{
+	width: 471px;
+	height: 196px;
+	float: left;
+	overflow: hidden;
+	border: 2px solid #990000;
+}
+
+/*
+* Layout for forms (admin)
+*/
+
+input[type=text], select, input[type=password]
+{
+	height: 30px;
+	border-radius: 10px;
+	border: 1px solid #990000;
+	padding-left: 5px;
+}
+
+input[type=text]:focus, input[type=password]:focus
+{
+	outline: none;
+	background: #ffd3d3;
+}
+
+textarea
+{
+	border-radius: 10px;
+	border: 1px solid #990000;
+	padding-left: 5px;
+}
+
+textarea:focus
+{
+	outline: none;
+	background: #ffd3d3;
+}
+
+select:focus
+{
+	outline: none;
+}
+
+input[type=submit]
+{
+	height: 30px;
+	border: 1px solid #990000;
+	border-radius: 10px;
+	padding: 5px 5px 5px 5px;
+	margin-top: 5px;
+}

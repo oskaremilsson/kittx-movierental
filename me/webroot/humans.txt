@@ -1,0 +1,5 @@
+kittX is a PHP-boilerplate/framework for small websites. 
+kittX was built by Oskar Emilsson aka kitty as part of studying web programming 
+and published in september 2014 as an exercise.
+
+Cats, cats, cats are the best.
